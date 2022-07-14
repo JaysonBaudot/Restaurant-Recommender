@@ -5,7 +5,7 @@ from linkedlist import LinkedList
 print_welcome()
 
 
-# Write code to insert food types into a data structure (LinkedList) here. The data is in data.py
+# Insert food types into LinkedList here. The data is in data.py
 def insert_food_types():
     food_type_list = LinkedList()
     for food_type in types:
@@ -13,7 +13,7 @@ def insert_food_types():
     return food_type_list
 
 
-# Write code to insert restaurant data into a data structure (LinkedList of LinkedLists) here. The data is in data.py
+# Insert restaurant data into LinkedList of LinkedLists here. Data is in data.py
 def insert_restaurant_data():
     restaurant_data_list = LinkedList()
     for food_type in types:
@@ -31,7 +31,7 @@ my_restaurant_list = insert_restaurant_data()
 
 selected_food_type = ""
 
-# Write code for user interaction here
+# Code for user interaction
 while len(selected_food_type) == 0:
     user_input = str(input(
         "\nWhat type of food would you like to eat?\nType the beginning of that food type and press enter to see if "
